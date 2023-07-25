@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="2dp"
+    tools:context=".ui.checkout.CheckoutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:text="CHECKOUT"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingStart="30dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:text="Ingrese datos requeridos"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="30dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Dirección:"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_rounder_coner">
+
+
+            <!--INPUT-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Direccion y referencias de tu vivienda"
+                android:lines="4"
+                android:maxLines="4"
+                android:paddingLeft="17dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="30dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Celular:"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_rounder_coner">
+
+            <!--INPUT-->
+            <EditText
+                android:id="@+id/txt_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_celular"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Celular"
+                android:maxLines="1"
+                android:inputType="number"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_celular"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/icon_phone" />
+        </RelativeLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="25dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:gravity="center"
+                >
+
+
+                <com.paypal.checkout.paymentbutton.PaymentButtonContainer
+                    android:id="@+id/payment_button_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:paypal_button_color="silver"
+                    app:paypal_button_label="pay"
+                    app:paypal_button_shape="rectangle"
+                    app:paypal_button_size="large"
+                    app:paypal_button_enabled="true" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_totalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="S/.660"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

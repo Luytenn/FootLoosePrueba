@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">evaluacion</string>
+    <string name="title_activity_punto__venta">Punto_VentaActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Precios</string>
+    <string name="menu_punto_venta">Punta de Venta</string>
+    <string name="title_activity_punto_venta">Punto_VentaActivity</string>
+    <string name="title_activity_punto_venta2">PuntoVentaActivity</string>
+    <string name="title_activity_venta">VentaActivity</string>
+    <string name="title_activity_asdasdasd">asdasdasd</string>
+    <string name="title_activity_punto_ventaa">PuntoVentaaActivity</string>
+    <string name="title_activity_punto_de__venta">Punto_de_VentaActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys </string>
+    <string name="title_activity_test2">test2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>
